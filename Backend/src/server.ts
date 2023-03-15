@@ -44,10 +44,8 @@ app.use("/api/numbers", numbersRoute);
 app.use(errorMiddleware);
 
 //server static frontend
-app.use(express.static(path.join(__dirname, "../build/")));
-app.use("/*", express.static(path.join(__dirname, "../build/")));
-//serve static files
-app.use(express.static(path.join(__dirname, "../public/")));
+app.use(express.static(path.join(__dirname, "../static/")));
+app.use("/*", express.static(path.join(__dirname, "../static/")));
 
 //listening to port
 app.listen(port, () => {
