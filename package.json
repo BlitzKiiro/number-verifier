@@ -1,0 +1,12 @@
+{
+  "name": "number-verify",
+  "version": "1.0.0",
+  "description": "number verify website",
+  "main": "backend/dist/index.js",
+  "scripts": {
+    "start": "cd backend && node ./dist/server.js",
+    "dev": "cd backend && nodemon ./src/server.ts "
+  },
+  "author": "Ahmed Azmy",
+  "license": "ISC"
+}
